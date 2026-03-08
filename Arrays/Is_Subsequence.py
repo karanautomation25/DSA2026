@@ -1,3 +1,5 @@
+# https://www.youtube.com/watch?v=99RVfqklbCE
+
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         i = 0
