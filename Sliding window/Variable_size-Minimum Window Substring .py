@@ -1,3 +1,5 @@
+# Minimum Window Substring
+
 def minimumSubstringWindow(strng, t):
     count_map = dict()
     n = len(strng)
@@ -31,7 +33,7 @@ def minimumSubstringWindow(strng, t):
             ch_start = strng[start]
             if ch_start in count_map:
                 count_map[ch_start] += 1
-                  if count_map[ch_start] > 0:
+                if count_map[ch_start] > 0:
                     map_size += 1
 
             start += 1
@@ -40,3 +42,11 @@ def minimumSubstringWindow(strng, t):
 
     print("substring start index {} and end index {}".format(maxStart, maxend))
     return min_window_len
+
+
+s = "ADOBECODEBANC"
+t = "ABC"
+
+result = minimumSubstringWindow(s, t)
+
+print("Minimum Window Length:", result)

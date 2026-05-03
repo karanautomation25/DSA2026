@@ -42,3 +42,11 @@ def minimumSubstringWindow(strng, t):
 
     print("substring start index {} and end index {}".format(maxStart, maxend))
     return min_window_len
+
+
+s = "ADOBECODEBANC"
+t = "ABC"
+
+result = minimumSubstringWindow(s, t)
+
+print("Minimum Window Length:", result)
